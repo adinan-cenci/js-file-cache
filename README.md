@@ -4,7 +4,7 @@ This is a cache library build around the nodeJS File System and based on [PSR-16
 ## How to use it
 
 ```js
-const Cache = require('js-file-cache');
+const Cache = require('file-cache');
 var cache   = new Cache(__dirname+'/my-cache-directory/');
 ```
 
@@ -47,9 +47,4 @@ cache.getMultiple(['object1', 'value1', 'anotherObject'], fallback).then((data) 
 ## How to install
 Use npm
 
-```json
-// package.json
-"dependencies": {
-    "js-file-cache": "git+https://git@github.com/adinan-cenci/js-file-cache.git"
-}
-```
+npm install adinan-cenci/js-file-cache
