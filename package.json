@@ -1,5 +1,5 @@
 {
-  "name": "js-file-cache",
+  "name": "file-cache",
   "version": "1.0.0",
   "description": "A cache library build around the nodeJS File System",
   "main": "index.js",
