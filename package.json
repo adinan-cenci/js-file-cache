@@ -1,0 +1,27 @@
+{
+  "name": "js-file-cache",
+  "version": "1.0.0",
+  "description": "A cache library build around the nodeJS File System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adinan-cenci/js-file-cache.git"
+  },
+  "keywords": ["Cache"],
+  "author": "Adinan Cenci <adinancenci@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adinan-cenci/js-file-cache/issues"
+  },
+  "homepage": "https://github.com/adinan-cenci/js-file-cache#readme",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "btoa": "^1.2.1",
+    "proper-lockfile": "^4.1.0",
+    "serialize-javascript": "^1.6.1",
+    "touch": "^3.1.0"
+  }
+}
