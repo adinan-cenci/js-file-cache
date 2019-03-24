@@ -5,10 +5,7 @@ This is a cache library build around the nodeJS File System and based on [PSR-16
 
 ```js
 const Cache = require('js-file-cache');
-var cache   = new Cache(__dirname+'/my-cache-directory/').then(() =>
-{
-    console.log('success')
-});
+var cache   = new Cache(__dirname+'/my-cache-directory/');
 ```
 
 ### Caching
