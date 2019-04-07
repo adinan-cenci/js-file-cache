@@ -205,6 +205,15 @@ class Cache
     }
 
     /**
+     * Strip a string from invalid characters so
+     * it may be use as a valid cache key
+     */
+    normalizeKey(key)
+    {
+        return key.replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').toLowerCase();
+    }
+
+    /**
      * @param string key Unique identifier
      * @return bool
      */
