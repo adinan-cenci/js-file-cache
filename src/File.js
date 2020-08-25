@@ -28,7 +28,12 @@ class File
 
     async read()
     {
-        return promises.readFile(this.path, 'utf8');
+        var fileHandle  = await promises.open(this.path);
+        var content     = await fileHandle.readFile('utf8');
+        
+        fileHandle.close();
+
+        return content;
     }
 
     /**
@@ -105,13 +110,12 @@ class File
         return this.locked = !lockfile.unlockSync(this.path);
     }
 
-
     successPromise(data)
     {
         return new Promise(function(success, fail)
         {
             success(data);
-        })
+        });
     }
 }
 

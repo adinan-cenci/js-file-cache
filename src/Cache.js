@@ -106,7 +106,6 @@ class Cache
     {
         var gxi = this;
 
-
         return new Promise(function(success, fail)
         {
             var ret = {};
@@ -256,10 +255,9 @@ class Cache
      */
     async load(key)
     {
-        var gxi = this;
-        return this.getFile(key).read().then(function(data)
+        return this.getFile(key).read().then( (data) => 
         {
-            return gxi.decode(data);
+            return this.decode(data);
         });
     }
 
